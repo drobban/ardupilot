@@ -166,7 +166,8 @@ static RCInput_Multi rcinDriver{2, new RCInput_SBUS, new RCInput_115200("/dev/ua
 #elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_AERO
 static RCInput_SBUS rcinDriver;
 #elif CONFIG_HAL_BOARD_SUBTYPE == HAL_BOARD_SUBTYPE_LINUX_NAVIO2
-static RCInput_Navio2 rcinDriver;
+// static RCInput_Navio2 rcinDriver;
+static RCInput_UDP rcinDriver;
 #else
 static RCInput rcinDriver;
 #endif
